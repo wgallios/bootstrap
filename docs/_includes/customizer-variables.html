@@ -4,24 +4,28 @@
 <p>Gray and brand colors for use across Bootstrap.</p>
 <div class="row">
   <div class="bs-customizer-input">
+    <label for="input-@gray-base">@gray-base</label>
+    <input id="input-@gray-base" type="text" value="#000" data-var="@gray-base" class="form-control"/>
+  </div>
+  <div class="bs-customizer-input">
     <label for="input-@gray-darker">@gray-darker</label>
-    <input id="input-@gray-darker" type="text" value="lighten(#000, 13.5%)" data-var="@gray-darker" class="form-control"/>
+    <input id="input-@gray-darker" type="text" value="lighten(@gray-base, 13.5%)" data-var="@gray-darker" class="form-control"/>
   </div>
   <div class="bs-customizer-input">
     <label for="input-@gray-dark">@gray-dark</label>
-    <input id="input-@gray-dark" type="text" value="lighten(#000, 20%)" data-var="@gray-dark" class="form-control"/>
+    <input id="input-@gray-dark" type="text" value="lighten(@gray-base, 20%)" data-var="@gray-dark" class="form-control"/>
   </div>
   <div class="bs-customizer-input">
     <label for="input-@gray">@gray</label>
-    <input id="input-@gray" type="text" value="lighten(#000, 33.5%)" data-var="@gray" class="form-control"/>
+    <input id="input-@gray" type="text" value="lighten(@gray-base, 33.5%)" data-var="@gray" class="form-control"/>
   </div>
   <div class="bs-customizer-input">
     <label for="input-@gray-light">@gray-light</label>
-    <input id="input-@gray-light" type="text" value="lighten(#000, 46.7%)" data-var="@gray-light" class="form-control"/>
+    <input id="input-@gray-light" type="text" value="lighten(@gray-base, 46.7%)" data-var="@gray-light" class="form-control"/>
   </div>
   <div class="bs-customizer-input">
     <label for="input-@gray-lighter">@gray-lighter</label>
-    <input id="input-@gray-lighter" type="text" value="lighten(#000, 93.5%)" data-var="@gray-lighter" class="form-control"/>
+    <input id="input-@gray-lighter" type="text" value="lighten(@gray-base, 93.5%)" data-var="@gray-lighter" class="form-control"/>
   </div>
   <div class="bs-customizer-input">
     <label for="input-@brand-primary">@brand-primary</label>
@@ -395,7 +399,17 @@
   <div class="bs-customizer-input">
     <label for="input-@input-border-radius">@input-border-radius</label>
     <input id="input-@input-border-radius" type="text" value="@border-radius-base" data-var="@input-border-radius" class="form-control"/>
-    <p class="help-block"><code>&lt;input&gt;</code> border radius</p>
+    <p class="help-block">Default <code>.form-control</code> border radius</p>
+  </div>
+  <div class="bs-customizer-input">
+    <label for="input-@input-border-radius-large">@input-border-radius-large</label>
+    <input id="input-@input-border-radius-large" type="text" value="@border-radius-large" data-var="@input-border-radius-large" class="form-control"/>
+    <p class="help-block">Large <code>.form-control</code> border radius</p>
+  </div>
+  <div class="bs-customizer-input">
+    <label for="input-@input-border-radius-small">@input-border-radius-small</label>
+    <input id="input-@input-border-radius-small" type="text" value="@border-radius-small" data-var="@input-border-radius-small" class="form-control"/>
+    <p class="help-block">Small <code>.form-control</code> border radius</p>
   </div>
   <div class="bs-customizer-input">
     <label for="input-@input-border-focus">@input-border-focus</label>
@@ -404,7 +418,7 @@
   </div>
   <div class="bs-customizer-input">
     <label for="input-@input-color-placeholder">@input-color-placeholder</label>
-    <input id="input-@input-color-placeholder" type="text" value="@gray-light" data-var="@input-color-placeholder" class="form-control"/>
+    <input id="input-@input-color-placeholder" type="text" value="#999" data-var="@input-color-placeholder" class="form-control"/>
     <p class="help-block">Placeholder text color</p>
   </div>
   <div class="bs-customizer-input">
@@ -726,7 +740,7 @@
   </div>
   <div class="bs-customizer-input">
     <label for="input-@navbar-inverse-color">@navbar-inverse-color</label>
-    <input id="input-@navbar-inverse-color" type="text" value="@gray-light" data-var="@navbar-inverse-color" class="form-control"/>
+    <input id="input-@navbar-inverse-color" type="text" value="lighten(@gray-light, 15%)" data-var="@navbar-inverse-color" class="form-control"/>
   </div>
   <div class="bs-customizer-input">
     <label for="input-@navbar-inverse-bg">@navbar-inverse-bg</label>
@@ -738,7 +752,7 @@
   </div>
   <div class="bs-customizer-input">
     <label for="input-@navbar-inverse-link-color">@navbar-inverse-link-color</label>
-    <input id="input-@navbar-inverse-link-color" type="text" value="@gray-light" data-var="@navbar-inverse-link-color" class="form-control"/>
+    <input id="input-@navbar-inverse-link-color" type="text" value="lighten(@gray-light, 15%)" data-var="@navbar-inverse-link-color" class="form-control"/>
   </div>
   <div class="bs-customizer-input">
     <label for="input-@navbar-inverse-link-hover-color">@navbar-inverse-link-hover-color</label>
@@ -808,10 +822,6 @@
   <div class="bs-customizer-input">
     <label for="input-@nav-disabled-link-hover-color">@nav-disabled-link-hover-color</label>
     <input id="input-@nav-disabled-link-hover-color" type="text" value="@gray-light" data-var="@nav-disabled-link-hover-color" class="form-control"/>
-  </div>
-  <div class="bs-customizer-input">
-    <label for="input-@nav-open-link-hover-color">@nav-open-link-hover-color</label>
-    <input id="input-@nav-open-link-hover-color" type="text" value="#fff" data-var="@nav-open-link-hover-color" class="form-control"/>
   </div>
 </div>
 <h2 id="tabs">Tabs</h2>
@@ -1088,7 +1098,7 @@
   </div>
   <div class="bs-customizer-input">
     <label for="input-@popover-arrow-color">@popover-arrow-color</label>
-    <input id="input-@popover-arrow-color" type="text" value="#fff" data-var="@popover-arrow-color" class="form-control"/>
+    <input id="input-@popover-arrow-color" type="text" value="@popover-bg" data-var="@popover-arrow-color" class="form-control"/>
     <p class="help-block">Popover arrow color</p>
   </div>
   <div class="bs-customizer-input">
@@ -1293,6 +1303,11 @@
     <label for="input-@progress-bar-color">@progress-bar-color</label>
     <input id="input-@progress-bar-color" type="text" value="#fff" data-var="@progress-bar-color" class="form-control"/>
     <p class="help-block">Progress bar text color</p>
+  </div>
+  <div class="bs-customizer-input">
+    <label for="input-@progress-border-radius">@progress-border-radius</label>
+    <input id="input-@progress-border-radius" type="text" value="@border-radius-base" data-var="@progress-border-radius" class="form-control"/>
+    <p class="help-block">Variable for setting rounded corners on progress bar.</p>
   </div>
   <div class="bs-customizer-input">
     <label for="input-@progress-bar-bg">@progress-bar-bg</label>
